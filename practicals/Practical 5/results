@@ -1,0 +1,12 @@
+OCR_NN_09 k=1 Accuracy=0.8350
+OCR_NN_09 k=3 Accuracy=0.8300
+OCR_NN_09 k=5 Accuracy=0.8500
+OCR_NN_09 k=10 Accuracy=0.8550
+
+OCR_SVM_09 kerneloption=5 Accuracy=0.9050
+OCR_SVM_09 kerneloption=4 Accuracy=0.9150
+OCR_SVM_09_poly kerneloption=5 Accuracy=0.8450
+
+OCR_Detector step 4 Accuracy=0.3600
+OCR_Detector step 5 (preprocessingDigit) Accuracy=0.7800
+OCR_Detector step 6 Accuracy=0.7800

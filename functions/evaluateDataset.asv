@@ -1,0 +1,34 @@
+function [accuracy, sensitivity, precision, specifity, fMeasure, falseAlarmRate] = evaluateDataset(results, labelsCount)
+
+% function totals all metrics for entire dataset and finds the mean
+accuracy=0;
+sensitivity=0;
+precision=0;
+specifity=0;
+fMeasure=0;
+falseAlarmRate=0;
+
+for i=1:size(results, 1)
+    accuracy = double(accuracy + double(results(i,4));
+    sensitivity = sensitivity + results(i,5);
+    precision = precision + results(i,6);
+    specifity = specifity + results(i,7);
+    fMeasure = fMeasure + results(i,8);
+    falseAlarmRate = falseAlarmRate + results(i,9);
+end
+
+accuracy=accuracy ./ labelsCount;
+sensitivity=sensitivity ./ labelsCount;
+precision=precision ./ labelsCount;
+specifity=specifity ./ labelsCount;
+fMeasure=fMeasure ./ labelsCount;
+falseAlarmRate=falseAlarmRate ./ labelsCount;
+
+fprintf('Accuracy = %f\n', accuracy);
+fprintf('Sensitivity = %f\n', sensitivity);
+fprintf('Precision = %f\n', precision);
+fprintf('Specifity = %f\n', specifity);
+fprintf('FMeasure = %f\n', fMeasure);
+fprintf('FalseAlarmRate = %f\n', falseAlarmRate);
+
+end

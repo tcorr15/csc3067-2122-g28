@@ -1,0 +1,19 @@
+function prediction = NNTesting(testImage, modelNN)
+
+index = Inf;
+labels = 
+
+for i = 1:size(modelNN)
+    
+    dEuc=EuclideanDistance(sample1, sample2)
+    
+    if index < 
+end
+prediction = modelNN.label(i);
+    
+    
+    
+    
+
+end
+
